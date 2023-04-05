@@ -1,6 +1,126 @@
 Links: https://developer.mozilla.org/en-US/docs/Web/CSS/Compositing_and_Blending
 
 01. CSS Compositing and Blending
+  (Pencampuran komposisi element css)
+  - Properti:
+    A. background-blend-mode: multiply;
+      Values:
+        - normal          - soft-light
+        - multiply        - difference
+        - screen          - exclusion
+        - overlay         - hue
+        - darken          - saturation
+        - lighten         - color
+        - color-dodge     - luminosity
+        - color-burn      - hard-light
+
+    B. isolation:
+      Properti ini sangat membantu bila digunakan bersama dengan mix-blend-modedan z-index.
+      Sintaks:
+      /* Keyword values */
+        isolation: auto;
+        isolation: isolate;
+
+      /* Global values */
+        isolation: inherit;
+        isolation: initial;
+        isolation: revert;
+        isolation: revert-layer;
+        isolation: unset;
+
+    C. mix-blend-mode:
+      Sintaks:
+      /* Keyword values */
+        mix-blend-mode: normal;
+        mix-blend-mode: multiply;
+        mix-blend-mode: screen;
+        mix-blend-mode: overlay;
+        mix-blend-mode: darken;
+        mix-blend-mode: lighten;
+        mix-blend-mode: color-dodge;
+        mix-blend-mode: color-burn;
+        mix-blend-mode: hard-light;
+        mix-blend-mode: soft-light;
+        mix-blend-mode: difference;
+        mix-blend-mode: exclusion;
+        mix-blend-mode: hue;
+        mix-blend-mode: saturation;
+        mix-blend-mode: color;
+        mix-blend-mode: luminosity;
+
+      /* Global values */
+        mix-blend-mode: inherit;
+        mix-blend-mode: initial;
+        mix-blend-mode: revert;
+        mix-blend-mode: revert-layer;
+        mix-blend-mode: unset;
+       
+   - Konsep Terkait
+    A. backdrop-filter:
+      Sintaks:
+      /* Keyword value */
+        backdrop-filter: none;
+
+      /* URL to SVG filter */
+        backdrop-filter: url(commonfilters.svg#filter);
+
+      /* <filter-function> values */
+        backdrop-filter: blur(2px);
+        backdrop-filter: brightness(60%);
+        backdrop-filter: contrast(40%);
+        backdrop-filter: drop-shadow(4px 4px 10px blue);
+        backdrop-filter: grayscale(30%);
+        backdrop-filter: hue-rotate(120deg);
+        backdrop-filter: invert(70%);
+        backdrop-filter: opacity(20%);
+        backdrop-filter: sepia(90%);
+        backdrop-filter: saturate(80%);
+
+      /* Multiple filters */
+        backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%);
+
+      /* Global values */
+        backdrop-filter: inherit;
+        backdrop-filter: initial;
+        backdrop-filter: revert;
+        backdrop-filter: revert-layer;
+        backdrop-filter: unset;
+
+    B. filter
+      Syntaks:
+      /* <filter-function> values */
+        filter: blur(5px);
+        filter: brightness(0.4);
+        filter: contrast(200%);
+        filter: drop-shadow(16px 16px 20px blue);
+        filter: grayscale(50%);
+        filter: hue-rotate(90deg);
+        filter: invert(75%);
+        filter: opacity(25%);
+        filter: saturate(30%);
+        filter: sepia(60%);
+
+      /* URL */
+        filter: url("filters.svg#filter-id");
+
+      /* Multiple filters */
+        filter: contrast(175%) brightness(3%);
+        filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue);
+
+      /* Use no filter */
+        filter: none;
+
+      /* Global values */
+        filter: inherit;
+        filter: initial;
+        filter: revert;
+        filter: revert-layer;
+        filter: unset;
+
+    C.
+    D.
+    E.
+
 02. CSS Animation
 03. CSS Backgrounds and Borders
 04. CSS Basic User Interface
